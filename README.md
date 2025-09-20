@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Cadastro Leads
 Projeto acadêmico desenvolvido para a disciplina de Projeto de Software.
 
