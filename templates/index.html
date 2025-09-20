@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Leads</title>
+</head>
+<body>
+    <h1>Cadastrar Lead</h1>
+    <form action="/add_lead" method="post">
+        Nome: <input type="text" name="nome" required><br>
+        Email: <input type="email" name="email" required><br>
+        Telefone: <input type="text" name="telefone" required><br>
+        Produto:
+        <select name="produto_id" required>
+            {% for p in produtos %}
+            <option value="{{p[0]}}">{{p[1]}} (R$ {{p[2]}})</option>
+            {% endfor %}
+        </select><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <br>
+    <a href="/leads">Ver Leads Cadastrados</a>
+</body>
+</html>

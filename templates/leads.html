@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leads Cadastrados</title>
+</head>
+<body>
+    <h1>Leads</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Produto</th>
+        </tr>
+        {% for l in leads %}
+        <tr>
+            <td>{{l[0]}}</td>
+            <td>{{l[1]}}</td>
+            <td>{{l[2]}}</td>
+            <td>{{l[3]}}</td>
+            <td>{{l[4]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">Voltar</a>
+</body>
+</html>
